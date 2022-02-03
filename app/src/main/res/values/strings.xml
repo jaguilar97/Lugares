@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Lugares</string>
+    <string name="tv_correo">Correo</string>
+    <string name="tv_clave">Contraseña</string>
+    <string name="msg_correo">Campo para ingresra su correo</string>
+    <string name="msg_clave">Campo para ingresra su contraseña</string>
+    <string name="msg_bt_login">Boton para ingresar a la App</string>
+    <string name="msg_bt_bt_Register">Boton para registrarse en la App</string>
+    <string name="msg_fallo_registro">Falló el registro del usuario</string>
+    <string name="msg_fallo_login">Falló el login del usuario</string>
+
 </resources>
