@@ -1,5 +1,6 @@
 package com.example.lugares
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -56,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         //Se usa la función para crear un usuario por medio de correo y contraseña.
 
         auth.createUserWithEmailAndPassword(email, clave)
-            .addOnCompleteListener(this) { task ->
+            .addOnCompleteListener(this) { task -> //Cuando se completó la tarea, entonces hacer lo siguiente
                 if (task.isSuccessful) {
                     val user = auth.currentUser
                     actualiza(user)
@@ -70,8 +71,15 @@ class MainActivity : AppCompatActivity() {
     private fun actualiza(user: FirebaseUser?) {
         if (user!=null){
             //paso a la pantalla principal
-
+            val intent = Intent(this,Principal::class.java)
+            startActivity(intent)
         }
+    }
+
+    public override fun onStart() {
+        super.onStart()
+        val user = auth.currentUser
+        actualiza(user)
     }
 
 }
