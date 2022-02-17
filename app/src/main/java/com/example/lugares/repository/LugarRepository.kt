@@ -10,7 +10,7 @@ import com.example.lugares.model.Lugar
 
 class LugarRepository(private val lugarDao: LugarDao) {
 
-    fun getAllData() : LiveData<List<Lugar>> = lugarDao.getAllData()
+    val getAllData : LiveData<List<Lugar>> = lugarDao.getAllData()
 
     suspend fun addLugar(lugar: Lugar){
         lugarDao.addLugar(lugar)
