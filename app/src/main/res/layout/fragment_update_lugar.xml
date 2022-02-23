@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.lugar.AddLugarFragment" >
+    tools:context=".ui.lugar.UpdateLugarFragment" >
 
     <ScrollView
         android:layout_width="0dp"
@@ -58,10 +58,10 @@
                 android:minHeight="48dp" />
 
             <Button
-                android:id="@+id/btAddLugar"
+                android:id="@+id/btUpdateLugar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/bt_add_lugar" />
+                android:text="@string/bt_update_lugar" />
 
         </LinearLayout>
     </ScrollView>

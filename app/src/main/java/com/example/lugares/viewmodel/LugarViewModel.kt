@@ -25,11 +25,11 @@ class LugarViewModel(application: Application)
     }
 
     fun updateLugar(lugar: Lugar){
-        viewModelScope.launch(Dispatchers.IO) {repository.addLugar(lugar)}
+        viewModelScope.launch(Dispatchers.IO) {repository.updateLugar(lugar)}
     }
 
     fun deleteLugar(lugar: Lugar){
-        viewModelScope.launch(Dispatchers.IO) {repository.addLugar(lugar)}
+        viewModelScope.launch(Dispatchers.IO) {repository.deleteLugar(lugar)}
     }
 
 }
